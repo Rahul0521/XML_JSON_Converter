@@ -3,6 +3,8 @@ This is a Django Application which allows users to convert XML File to JSON Form
 XML to JSON Converter Web App
 This project is a full-stack web application that allows users to upload XML files, converts them to JSON format, and provides the option to download the converted JSON file. The application is built using Django and Bootstrap, ensuring a responsive and user-friendly interface.
 
+![image](https://github.com/Rahul0521/XML_JSON_Converter/assets/38578247/380b388c-750d-4a70-a93c-431987e66b21)
+
 Features
 Upload XML files
 Convert XML to JSON format
