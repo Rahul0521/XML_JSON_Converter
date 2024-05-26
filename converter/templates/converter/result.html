@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block title %}Converted JSON{% endblock %}
+
+{% block content %}
+    <h1>Converted JSON</h1>
+    <pre>{{ json_data }}</pre>
+    <a href="{% url 'upload_file' %}">Upload another file</a>
+    <form action="{% url 'download_json' %}" method="post">
+        {% csrf_token %}
+        <input type="hidden" name="json_data" value="{{ json_data }}">
+        <!-- <button type="submit">Upload</button> -->
+        <button type="submit" class="btn btn-success btn-custom">Download JSON</button>
+    </form>
+{% endblock %}

@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block title %}Error{% endblock %}
+
+{% block content %}
+<div class="alert alert-danger" role="alert">
+    <h4 class="alert-heading">Oops!</h4>
+    <p>This file is not a valid XML File. Please try uploading a valid XML again.</p>
+    <hr>
+    <a href="{% url 'upload_file' %}" class="btn btn-primary">Upload XML File</a>
+</div>
+{% endblock %}
